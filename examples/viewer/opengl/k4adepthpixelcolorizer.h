@@ -1,12 +1,16 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
+#pragma once
+
 #ifndef K4ADEPTHPIXELCOLORIZER_H
 #define K4ADEPTHPIXELCOLORIZER_H
 
 // System headers
 //
 #include <algorithm>
+#include <limits>
+#include <k4a/k4a.hpp>
 
 // Library headers
 //
