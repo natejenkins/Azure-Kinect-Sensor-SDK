@@ -36,6 +36,16 @@ API documentation is avaliable [here](https://microsoft.github.io/Azure-Kinect-S
 Azure Kinect SDK uses CMake to build. For instructions on how to build this SDK please see
 [building](docs/building.md).
 
+```bash
+cmake .. -G Ninja -DCMAKE_C_FLAGS="-Wno-error=deprecated-declarations -Wno-error=array-parameter" -DCMAKE_CXX_FLAGS="-Wno-error=deprecated-declarations" -DCMAKE_C_VISIBILITY_PRESET=hidden
+```
+
+and then run 
+
+```bash
+ninja
+```
+
 ## Versioning
 
 The Azure Kinect SDK uses semantic versioning, please see [versioning.md](docs/versioning.md) for more information.
